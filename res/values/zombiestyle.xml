@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="zombiestyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FBFBFB</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#777777</item>
+         <item name="android:shadowDx">2</item>
+    	<item name="android:shadowDy">2</item>
+    	<item name="android:shadowRadius">2</item>
+        <item name="android:typeface">sans</item>
+      	<item name="android:background">@drawable/background</item>
+      	<item name="android:gravity">center_vertical</item>
+      	<item name="android:textSize">16.4dp</item>
+      	<item name="android:paddingTop">3dp</item>
+      	<item name="android:paddingLeft">5dp</item>
+      	<item name="android:paddingRight">5dp</item> 
+    </style>
+    
+    <style name="Textstyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">25dp</item>   
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0</item>
+    	<item name="android:shadowDy">2</item>
+    	<item name="android:shadowRadius">1</item>
+        <item name="android:typeface">sans</item>
+      	<item name="android:gravity">center</item>
+    </style>
+    
+    <style name="Textstyle2" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">20dp</item>   
+
+        <item name="android:typeface">sans</item>
+      	
+    </style>
+    
+    <style name="ButtonStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">15dp</item>   
+        <item name="android:typeface">sans</item>
+      	<item name="android:gravity">center</item>
+      	<item name="android:background">@drawable/buttonbackground</item>
+    </style>
+</resources>

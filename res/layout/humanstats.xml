@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/appbg">
+	<TextView android:layout_height="40dp"
+		android:drawablePadding="20dp" android:text="Welcome to the Zombie Outbreak"
+		android:id="@+id/title" style="@style/zombiestyle"
+		android:layout_toLeftOf="@+id/homebutton"
+		android:layout_alignParentLeft="true" />
+	<Button android:id="@+id/homebutton" android:drawableTop="@+drawable/ic_tab_home"
+		style="@style/zombiestyle" android:layout_width="wrap_content"
+		android:layout_height="40dp" android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true">
+	</Button>
+	<ImageView android:src="@drawable/shadow"
+		android:layout_width="fill_parent" android:layout_height="5dp"
+		android:id="@+id/titleshadow" android:layout_below="@+id/title"
+		android:layout_alignLeft="@+id/title"></ImageView>
+
+
+	<TextView
+		android:text="Humans infected todate: 99. \nHumans Spawned todate: 100"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_below="@+id/titleshadow" style="@style/Textstyle"
+		 android:layout_alignLeft="@+id/titleshadow"
+		android:layout_alignRight="@+id/titleshadow" android:id="@+id/humantext"/>
+
+
+
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true" android:layout_height="wrap_content">
+		<Button android:text="Infestation Map" style="@style/ButtonStyle"
+			android:drawableTop="@drawable/ic_tab_map" android:id="@+id/infestmap"
+			android:layout_weight="1"></Button>
+		<Button android:text="News and Stuff" style="@style/ButtonStyle"
+			android:drawableTop="@drawable/ic_tab_news" android:id="@+id/radar"
+			android:layout_weight="1"></Button>
+		<Button android:text="Zombie Stats" style="@style/ButtonStyle"
+			android:drawableTop="@drawable/ic_tab_zombies" android:id="@+id/buttonc"
+			android:layout_weight="1"></Button>
+		<Button android:text="Human Stats" style="@style/ButtonStyle"
+			android:drawableTop="@drawable/ic_tab_humans" android:id="@+id/buttond"
+			android:layout_weight="1"></Button>
+	</LinearLayout>
+</RelativeLayout>

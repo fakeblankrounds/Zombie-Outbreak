@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ZombieOutbreak!</string>
+    <string name="app_name">Zombie Outbreak</string>
+    <string name="ACCOUNT_TYPE">com.fbrs.zombieoutbreak.account</string>
+</resources>
