@@ -14,6 +14,8 @@ import com.fbrs.zombieoutbreak.account.Signin;
 import com.fbrs.zombieoutbreak.net.ServerConnection;
 import com.fbrs.zombieoutbreak.pages.StaticContent;
 import com.fbrs.zombieoutbreak.service.ZombieOutbreakService;
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
 
 public class ZombieOutbreak extends Activity {
 
@@ -26,6 +28,9 @@ public class ZombieOutbreak extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		 AdView adView = (AdView)this.findViewById(R.id.adView);
+		    adView.loadAd(new AdRequest());
+
 
 		final Activity a = this;
 		HandleAccount();

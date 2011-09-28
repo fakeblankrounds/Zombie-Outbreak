@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import com.fbrs.zombieoutbreak.R;
 import com.fbrs.zombieoutbreak.ZombieOutbreak;
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
 
 public class HumanStats extends Activity{
 	
@@ -16,7 +18,10 @@ public class HumanStats extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.humanstats);
         StaticContent.setupButtons(this,4);
-        
+        AdView adView = (AdView)this.findViewById(R.id.adView);
+	    adView.loadAd(new AdRequest());
+
+
         TextView stats = (TextView)findViewById(R.id.humantext);
         SharedPreferences prefs = getSharedPreferences(ZombieOutbreak.TAG,1);
         long time = prefs.getLong("human_since", -1);

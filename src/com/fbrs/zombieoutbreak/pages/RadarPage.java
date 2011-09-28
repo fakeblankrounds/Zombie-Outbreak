@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import com.fbrs.zombieoutbreak.R;
 import com.fbrs.zombieoutbreak.ZombieOutbreak;
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
 
 public class RadarPage extends Activity{
 	
@@ -21,6 +23,10 @@ public class RadarPage extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.radar);
         StaticContent.setupButtons(this,2);
+        AdView adView = (AdView)this.findViewById(R.id.adView);
+	    adView.loadAd(new AdRequest());
+
+
         
         TextView view = (TextView)findViewById(R.id.newstext);
         String text = "";

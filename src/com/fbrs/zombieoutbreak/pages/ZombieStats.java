@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import com.fbrs.zombieoutbreak.R;
 import com.fbrs.zombieoutbreak.ZombieOutbreak;
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
 
 public class ZombieStats extends Activity implements Runnable{
 
@@ -26,6 +28,10 @@ public class ZombieStats extends Activity implements Runnable{
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.zombiestats);
+		 AdView adView = (AdView)this.findViewById(R.id.adView);
+		    adView.loadAd(new AdRequest());
+
+
 		StaticContent.setupButtons(this,3);
 
 		countdown = (TextView)this.findViewById(R.id.countdown);

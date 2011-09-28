@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+
 	android:orientation="vertical" android:layout_width="fill_parent"
 	android:layout_height="fill_parent" android:background="@drawable/appbg">
 	<TextView android:layout_height="40dp"
@@ -28,7 +30,15 @@
 		android:layout_marginBottom="25dp" android:layout_width="wrap_content"
 		android:id="@+id/count" android:layout_height="wrap_content"
 		android:text="There are 100 Zombies and 100 Humans"
-		android:layout_above="@+id/linearLayout1"></TextView>
+		android:layout_above="@+id/ads"></TextView>
+	<LinearLayout android:id="@+id/ads"  android:layout_above="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_height="75px">
+	<com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="a14e8262ebd4ac2"
+                         ads:adSize="BANNER"
+                         ads:loadAdOnCreate="true"/>
+		</LinearLayout>
 
 
 	<LinearLayout android:id="@+id/linearLayout1"
