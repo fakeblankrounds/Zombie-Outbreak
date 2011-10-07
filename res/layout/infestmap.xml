@@ -16,16 +16,15 @@
 		android:layout_width="fill_parent" android:layout_height="5dp"
 		android:id="@+id/titleshadow" android:layout_below="@+id/title"
 		android:layout_alignLeft="@+id/title"></ImageView>
-	<!--  debug map -->
-<!-- 	<com.google.android.maps.MapView android:id="@+id/mapview"
+	<!--  debug map -->	<com.google.android.maps.MapView android:id="@+id/mapview"
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
 		android:clickable="true" android:apiKey="0pOR4eeGYSAvXwYvvAFydpDQZcfkdLKAtXcS69g"
 		android:layout_below="@+id/title" android:layout_above="@+id/linearLayout1" /> -->
-	<!-- The Production map with production code -->	
+	<!-- The Production map with production code
 	<com.google.android.maps.MapView android:id="@+id/mapview"
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
 		android:clickable="true" android:apiKey="0pOR4eeGYSAtO6heFhf7L0iql-Qh9GoAr4lQ9tQ"
-		android:layout_below="@+id/title" android:layout_above="@+id/linearLayout1" /> 
+		android:layout_below="@+id/title" android:layout_above="@+id/linearLayout1" /> -->
 
 
 	<LinearLayout android:id="@+id/linearLayout1"
