@@ -31,7 +31,8 @@ public class InfestMap extends MapActivity{
        // mapView.setFocusable(false);
         mapView.getController().zoomToSpan(160000000, 160000000);
        // mapView.getController().setCenter(new GeoPoint(0,-1));
-       // mapView.getController().setZoom(1);
+        //mapView.getController().setZoom(1);
+        //mapView.getController().
         
         ZombieOverlay overlay = new ZombieOverlay();
         List<Overlay> list = mapView.getOverlays();

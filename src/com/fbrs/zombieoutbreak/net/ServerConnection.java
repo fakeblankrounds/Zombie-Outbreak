@@ -69,7 +69,10 @@ public static String EC2Server = null;
 			@Override
 			public void run() {
 				request.run();
+				try {
 				result.run();
+				}
+				catch(Exception e) {}
 			}
 		});
 		thread.start();
