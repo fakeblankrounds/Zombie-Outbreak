@@ -63,7 +63,7 @@ public class ZombieOverlay extends Overlay{
 		//GeoPoint b = MapProjections.fromPixels(mapv.getRight(), mapv.getBottom());
 		//Log.v("ZombieOutbreak", "Rect = " + b.getLatitudeE6()+","+ a.getLongitudeE6()+","+ a.getLatitudeE6()+","+ b.getLongitudeE6());
 		ArrayList<OverLayItemDescriptor> descList;
-		descList = overlayList.query2D(new RectF(b.getLatitudeE6(), a.getLongitudeE6(), a.getLatitudeE6(), b.getLongitudeE6()), mapv.getZoomLevel()+2);
+		descList = overlayList.query2D(new RectF(b.getLatitudeE6(), a.getLongitudeE6(), a.getLatitudeE6(), b.getLongitudeE6()), mapv.getZoomLevel()+1);
 
 		if(descList != null) {
 			//Log.v("ZombieOutbreak", "Drawing " + descList.size() + " nodes");
@@ -78,7 +78,7 @@ public class ZombieOverlay extends Overlay{
 				Point drawPoint = new Point();
 //				drawPoint = mapv.getProjection().toPixels(new GeoPoint(-40000000, -40000000), drawPoint);
 				drawPoint = mapv.getProjection().toPixels(new GeoPoint(desc.lat, desc.lng), drawPoint);
-				Log.v("ZombieOutbreak", desc.lat + " => " + drawPoint.x + " _ " + desc.lng + "=>" +drawPoint.y);
+				//Log.v("ZombieOutbreak", desc.lat + " => " + drawPoint.x + " _ " + desc.lng + "=>" +drawPoint.y);
 				canvas.drawPoint(drawPoint.x, drawPoint.y, paint);
 //
 			}

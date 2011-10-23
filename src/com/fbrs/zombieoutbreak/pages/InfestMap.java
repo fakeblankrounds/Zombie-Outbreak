@@ -28,9 +28,10 @@ public class InfestMap extends MapActivity{
         mapView = (MapView) findViewById(R.id.mapview);
         //mapView.setBuiltInZoomControls(true);
        // mapView.setClickable(false);
-       // mapView.setFocusable(false);
-        mapView.getController().zoomToSpan(160000000, 160000000);
-       // mapView.getController().setCenter(new GeoPoint(0,-1));
+       // mapView.setFocusable(false); 
+        mapView.getController().setCenter(new GeoPoint(0,0));
+        mapView.getController().zoomToSpan(160000000, -160000000);
+       
         //mapView.getController().setZoom(1);
         //mapView.getController().
         
